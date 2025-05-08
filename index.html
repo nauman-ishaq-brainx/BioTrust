@@ -10,6 +10,43 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Bootstrap - Customer Support Dropdown</title>
   <style>
+    .customer-reviews {
+            background-color: #0d4f9a;
+        }
+
+        .green-bar {
+            background-color: #2bb34d;
+            width: 8px;
+            height: 80%;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .green-bar {
+                width: 90%;
+                margin-left: 15px;
+                margin-right: 15px;
+                height: 8px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .more-reviews {
+            color: #2bb34d;
+        }
+
+        .verified-buyer {
+            margin-top: 30px;
+            color: #2bb34d;
+        }
+
+        .stars {
+            color: #2bb34d;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
 
     .drop-down-text {
         font-size: 14px;
@@ -181,6 +218,16 @@
         .navbar-toggler[aria-expanded="false"] .close-icon {
             display: none;
         }
+
+        .top-line {
+            width: 100%;
+            height: 4px;
+            background-color: #0d4f9a;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        
   </style>
 </head>
 <body>
@@ -385,6 +432,38 @@
               </svg>
           </li>
       </ul>
+  </div>
+</div>
+
+<!-- Footer-->
+<div class="top-line"></div>
+
+<div class="container-fluid mt-1 customer-reviews">
+  <div class="row">
+      <div class="col-md-3 p-5 pb-0 text-white">
+          <h3 class="m-0 ms-1">Featured</h3>
+          <h3 class="m-0 ms-1">Customer Reviews</h3>
+          <p class="more-reviews pt-3">Read more reviews</p>
+
+          <!-- Horizontal bar for small screens -->
+          <div class="green-bar d-md-none"></div>
+      </div>
+
+      <!-- Vertical bar for larger screens -->
+      <div class="col-md-1 d-none d-md-flex justify-content-center align-items-start">
+          <div class="green-bar"></div>
+      </div>
+
+      <div class="col-md-8 p-5 text-white text-center">
+          <!-- 5 Green Stars -->
+          <div class="stars">
+              ★ ★ ★ ★ ★
+          </div>
+          
+          <p>"I love it! No taste or smell. I put it in my coffee first thing. Cuts my hunger and gives me energy."</p>
+          <h5>Jacqueline T. </h5>
+          <h5 class="verified-buyer">VERIFIED BUYER</h5>
+      </div>
   </div>
 </div>
 
