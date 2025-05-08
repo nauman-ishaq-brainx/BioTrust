@@ -205,6 +205,46 @@
             color: #0056b3;
             font-weight: 500;
         }
+
+        .products {
+            background-color: #003663;
+            padding: 10px;
+        }
+
+        .product-box {
+            background-color: #003663;
+            padding: 20px;
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+
+        .product-box img {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s ease;
+        }
+
+        /* Large screens and above */
+        @media (min-width: 992px) {
+            .product-box img {
+                top: -20px; /* Half outside the box */
+            }
+        }
+
+        /* Below large screens */
+        @media (max-width: 991.98px) {
+            .product-box img {
+                position: relative; /* Inside the box */
+                top: 0;
+                left: 10px;
+                margin-bottom: 10px;
+                margin-left: 0; /* Spacing below the image */
+            }
+        }
         .arrow-icon {
       float: right;
       color: #28a745;
@@ -434,9 +474,39 @@
       </ul>
   </div>
 </div>
+<!-- Features -->
+<div class="top-line"></div>
+
+<div class="container-fluid w-100 pb-0 mt-3 bg-white products">
+  <div class="row ">
+      <!-- Product Box 1 -->
+      <div class="col-6 col-lg-3 product-box">
+          <img src="images/60-day-money-back-guarantee.avif" alt="product-image" class="rounded-circle">
+          <p class="small mt-5 mt-lg-4">60-Day Money Back Guarantee</p>
+      </div>
+      <!-- Product Box 2 -->
+      <div class="col-6 col-lg-3 product-box">
+          <img src="images/Complete_-5-Collagen-Protein.png" alt="product-image" class="rounded-circle">
+          <p class="small mt-5 mt-lg-4">Complete, 5-Collagen Protein</p>
+      </div>
+      <!-- Product Box 3 -->
+      <div class="col-6 col-lg-3 product-box">
+          <img src="images/Hormone_-Glutena-and-Soy-Free_0cfd5c3d-c8a2-4659-ba48-bd631a05e7e5.png" alt="product-image" class="rounded-circle">
+          <p class="small mt-5 mt-lg-4">Hormone & Gluten-Free & non-GMO</p>
+      </div>
+      <!-- Product Box 4 -->
+      <div class="col-6 col-lg-3 product-box">
+          <img src="images/never-clumps_609b1d6f-1c62-4cb9-8fe5-725c0dc114bb.png" alt="product-image" class="rounded-circle">
+          <p class="small mt-5 mt-lg-4">Never Clumps</p>
+      </div>
+  </div>
+</div>
+
+
+
 
 <!-- Footer-->
-<div class="top-line"></div>
+
 
 <div class="container-fluid mt-1 customer-reviews">
   <div class="row">
