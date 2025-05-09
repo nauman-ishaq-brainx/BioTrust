@@ -515,6 +515,14 @@ height: 28px;
 }
 #verticalCarousel {
 margin: 0.5rem 0;
+width: 100px; 
+height: 500px;
+}
+#subscribeBtn {
+    font-size: clamp(0.7rem, 2vw, 1rem);
+}
+.selector-button {
+    font-size: clamp(0.7rem, 2vw, 1rem);
 }
 .main-image-container img {
 transition: transform 0.3s ease;
